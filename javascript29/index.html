@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <script>
+        var student = {
+            name:"いたろうめん",
+            sex:"男",
+            age:"25",
+        }
+        document.write("名前は" + student.name + "です<br>");
+        document.write("性別は" + student.sex + "です<br>");
+        document.write("年齢は" + student.age + "歳です<br>");
+
+        var person = {
+            name:"张三",
+            sex:"男",
+            age:"25"
+        }
+        document.write("姓名: " + person['name'] + "<br>");
+        document.write("性别: " + person['sex'] + "<br>");
+        document.write("年龄: " + person['age'] + "<br>");
+
+        function Student(name,sex,age){
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+        }
+
+        var student1 = new Student("チョメロ","男",23);
+        var student2 = new Student("チョモロ","女",22);
+        var student3 = new Student("太郎","男",21);
+        var student4 = new Student("さるじりさん","男",26);
+
+        document.write(student1['name']);
+        document.write(student2.name);
+        document.write(student3.sex);
+        document.write(student4['age']);
+
+    </script>
+
+    <h1 style = "font-size: 24px;">梅西</h1>
+    <script type="text/javascript">
+        function Player(height,weight,sport,team,character){
+            this.height = height;
+            this.weight = weight;
+            this.sport = sport;
+            this.character = character;
+        }
+        var player1 = new Player("170厘米","67千克","足球","巴塞罗那","技术出色，意识好");
+        document.write("球员身高: "+ player1.height + "<br>");
+        document.write("球员体重: " + player1.weight+ "<br>");
+        document.write("运动项目: " + player1.sport+ "<br>");
+        document.write("所属球队: " + player1.team + "<br>");
+        document.write("专业特点: " + player1.character + "<br>");
+
+
+    </script>
+
+    <h2 align="center">ワンワン!お探しのページは僕が食べたよ!</h2>
+    <pre align="center">
+    .----.
+    _.'__   ` 
+    .---&copy;&nbsp;&nbsp;&copy;---/&hearts;\ 
+    &euro;            /&ensp;&hearts;&hearts;\ 
+    :          ，  &hearts;&hearts;&hearts;&hearts; 
+    `-..__.-' _.-\&hearts;&hearts;/ 
+    `;_:    `"' 
+    &gt;.&quot;&quot;&quot;&quot;&quot;&lt;
+    `， hi ，\\ 
+    // こんにちは! \\
+    `-._________.-' 
+     ___`. | .'___ 
+     (______|______) 
+    </pre>
+
+    <p>x<sup>3</sup>+9x<sup>2</sup>-3=0</p>
+    <p>3x<sub>1</sub>+2x<sub>2</sub>=10</p>
+    <p>水: H<sub>2</sub>0</p>
+    
+</body>
+</html>
